@@ -9,6 +9,10 @@
 # move said applications out of the umbrella.
 use Mix.Config
 
+# Configure Mix tasks and generators
+config :welcome2_ecto,
+  ecto_repos: [Welcome2Ecto.Repo]
+
 
 
 config :welcome2_web,
