@@ -1,0 +1,44 @@
+[
+  {
+    "needs": {
+      "1": 6
+    },
+    "points1": 8,
+    "points2": 4
+  },
+  {
+    "needs": {
+      "2": 4
+    },
+    "points1": 8,
+    "points2": 4
+  },
+  {
+    "needs": {
+      "5": 2
+    },
+    "points1": 8,
+    "points2": 4
+  },
+  {
+    "needs": {
+      "3": 3
+    },
+    "points1": 8,
+    "points2": 4
+  },
+  {
+    "needs": {
+      "4": 2
+    },
+    "points1": 6,
+    "points2": 3
+  },
+  {
+    "needs": {
+      "6": 2
+    },
+    "points1": 10,
+    "points2": 6
+  }
+]

@@ -1,0 +1,202 @@
+{
+  "fencea": [
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false
+  ],
+  "fenceb": [
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false
+  ],
+  "fencec": [
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false
+  ],
+  "rowa": [
+    {
+      "number": null,
+      "plan": false
+    },
+    {
+      "number": null,
+      "plan": false
+    },
+    {
+      "number": null,
+      "plan": false,
+      "pool": false
+    },
+    {
+      "number": null,
+      "plan": false
+    },
+    {
+      "number": null,
+      "plan": false
+    },
+    {
+      "number": null,
+      "plan": false
+    },
+    {
+      "number": null,
+      "plan": false,
+      "pool": false
+    },
+    {
+      "number": null,
+      "plan": false,
+      "pool": false
+    },
+    {
+      "number": null,
+      "plan": false
+    },
+    {
+      "number": null,
+      "plan": false
+    }
+  ],
+  "rowb": [
+    {
+      "number": null,
+      "plan": false,
+      "pool": false
+    },
+    {
+      "number": null,
+      "plan": false
+    },
+    {
+      "number": null,
+      "plan": false
+    },
+    {
+      "number": null,
+      "plan": false,
+      "pool": false
+    },
+    {
+      "number": null,
+      "plan": false
+    },
+    {
+      "number": null,
+      "plan": false
+    },
+    {
+      "number": null,
+      "plan": false
+    },
+    {
+      "number": null,
+      "plan": false,
+      "pool": false
+    },
+    {
+      "number": null,
+      "plan": false
+    },
+    {
+      "number": null,
+      "plan": false
+    },
+    {
+      "number": null,
+      "plan": false
+    }
+  ],
+  "rowc": [
+    {
+      "number": null,
+      "plan": false
+    },
+    {
+      "number": null,
+      "plan": false,
+      "pool": false
+    },
+    {
+      "number": null,
+      "plan": false
+    },
+    {
+      "number": null,
+      "plan": false
+    },
+    {
+      "number": null,
+      "plan": false
+    },
+    {
+      "number": null,
+      "plan": false
+    },
+    {
+      "number": null,
+      "plan": false,
+      "pool": false
+    },
+    {
+      "number": null,
+      "plan": false
+    },
+    {
+      "number": null,
+      "plan": false
+    },
+    {
+      "number": null,
+      "plan": false
+    },
+    {
+      "number": null,
+      "plan": false,
+      "pool": false
+    },
+    {
+      "number": null,
+      "plan": false
+    }
+  ],
+  "parka": 0,
+  "parkb": 0,
+  "parkc": 0,
+  "plan1": 0,
+  "plan2": 0,
+  "plan3": 0,
+  "pools": 0,
+  "hazards": 0,
+  "estate1": 1,
+  "estate2": 2,
+  "estate3": 3,
+  "estate4": 4,
+  "estate5": 5,
+  "estate6": 6,
+  "bis": 0,
+  "roundabout": 0,
+  "refusals": 0
+}

@@ -1,0 +1,326 @@
+[
+  {
+    "face": 1,
+    "suit": "surveyor"
+  },
+  {
+    "face": 1,
+    "suit": "landscaper"
+  },
+  {
+    "face": 1,
+    "suit": "real-estate-agent"
+  },
+  {
+    "face": 2,
+    "suit": "surveyor"
+  },
+  {
+    "face": 2,
+    "suit": "landscaper"
+  },
+  {
+    "face": 2,
+    "suit": "real-estate-agent"
+  },
+  {
+    "face": 3,
+    "suit": "surveyor"
+  },
+  {
+    "face": 3,
+    "suit": "pool-manufacturer"
+  },
+  {
+    "face": 3,
+    "suit": "temp-agency"
+  },
+  {
+    "face": 3,
+    "suit": "bis"
+  },
+  {
+    "face": 4,
+    "suit": "pool-manufacturer"
+  },
+  {
+    "face": 4,
+    "suit": "temp-agency"
+  },
+  {
+    "face": 4,
+    "suit": "bis"
+  },
+  {
+    "face": 4,
+    "suit": "landscaper"
+  },
+  {
+    "face": 4,
+    "suit": "real-estate-agent"
+  },
+  {
+    "face": 5,
+    "suit": "surveyor"
+  },
+  {
+    "face": 5,
+    "suit": "surveyor"
+  },
+  {
+    "face": 5,
+    "suit": "landscaper"
+  },
+  {
+    "face": 5,
+    "suit": "landscaper"
+  },
+  {
+    "face": 5,
+    "suit": "real-estate-agent"
+  },
+  {
+    "face": 5,
+    "suit": "real-estate-agent"
+  },
+  {
+    "face": 6,
+    "suit": "surveyor"
+  },
+  {
+    "face": 6,
+    "suit": "surveyor"
+  },
+  {
+    "face": 6,
+    "suit": "pool-manufacturer"
+  },
+  {
+    "face": 6,
+    "suit": "temp-agency"
+  },
+  {
+    "face": 6,
+    "suit": "bis"
+  },
+  {
+    "face": 6,
+    "suit": "landscaper"
+  },
+  {
+    "face": 6,
+    "suit": "real-estate-agent"
+  },
+  {
+    "face": 7,
+    "suit": "surveyor"
+  },
+  {
+    "face": 7,
+    "suit": "pool-manufacturer"
+  },
+  {
+    "face": 7,
+    "suit": "temp-agency"
+  },
+  {
+    "face": 7,
+    "suit": "bis"
+  },
+  {
+    "face": 7,
+    "suit": "landscaper"
+  },
+  {
+    "face": 7,
+    "suit": "landscaper"
+  },
+  {
+    "face": 7,
+    "suit": "real-estate-agent"
+  },
+  {
+    "face": 7,
+    "suit": "real-estate-agent"
+  },
+  {
+    "face": 8,
+    "suit": "real-estate-agent"
+  },
+  {
+    "face": 8,
+    "suit": "real-estate-agent"
+  },
+  {
+    "face": 8,
+    "suit": "surveyor"
+  },
+  {
+    "face": 8,
+    "suit": "surveyor"
+  },
+  {
+    "face": 8,
+    "suit": "bis"
+  },
+  {
+    "face": 8,
+    "suit": "temp-agency"
+  },
+  {
+    "face": 8,
+    "suit": "pool-manufacturer"
+  },
+  {
+    "face": 8,
+    "suit": "landscaper"
+  },
+  {
+    "face": 8,
+    "suit": "landscaper"
+  },
+  {
+    "face": 9,
+    "suit": "surveyor"
+  },
+  {
+    "face": 9,
+    "suit": "pool-manufacturer"
+  },
+  {
+    "face": 9,
+    "suit": "temp-agency"
+  },
+  {
+    "face": 9,
+    "suit": "bis"
+  },
+  {
+    "face": 9,
+    "suit": "landscaper"
+  },
+  {
+    "face": 9,
+    "suit": "landscaper"
+  },
+  {
+    "face": 9,
+    "suit": "real-estate-agent"
+  },
+  {
+    "face": 9,
+    "suit": "real-estate-agent"
+  },
+  {
+    "face": 10,
+    "suit": "surveyor"
+  },
+  {
+    "face": 10,
+    "suit": "surveyor"
+  },
+  {
+    "face": 10,
+    "suit": "pool-manufacturer"
+  },
+  {
+    "face": 10,
+    "suit": "temp-agency"
+  },
+  {
+    "face": 10,
+    "suit": "bis"
+  },
+  {
+    "face": 10,
+    "suit": "real-estate-agent"
+  },
+  {
+    "face": 10,
+    "suit": "landscaper"
+  },
+  {
+    "face": 11,
+    "suit": "surveyor"
+  },
+  {
+    "face": 11,
+    "suit": "surveyor"
+  },
+  {
+    "face": 11,
+    "suit": "landscaper"
+  },
+  {
+    "face": 11,
+    "suit": "landscaper"
+  },
+  {
+    "face": 11,
+    "suit": "real-estate-agent"
+  },
+  {
+    "face": 11,
+    "suit": "real-estate-agent"
+  },
+  {
+    "face": 12,
+    "suit": "pool-manufacturer"
+  },
+  {
+    "face": 12,
+    "suit": "temp-agency"
+  },
+  {
+    "face": 12,
+    "suit": "bis"
+  },
+  {
+    "face": 12,
+    "suit": "real-estate-agent"
+  },
+  {
+    "face": 12,
+    "suit": "landscaper"
+  },
+  {
+    "face": 13,
+    "suit": "surveyor"
+  },
+  {
+    "face": 13,
+    "suit": "pool-manufacturer"
+  },
+  {
+    "face": 13,
+    "suit": "temp-agency"
+  },
+  {
+    "face": 13,
+    "suit": "bis"
+  },
+  {
+    "face": 14,
+    "suit": "surveyor"
+  },
+  {
+    "face": 14,
+    "suit": "real-estate-agent"
+  },
+  {
+    "face": 14,
+    "suit": "landscaper"
+  },
+  {
+    "face": 15,
+    "suit": "surveyor"
+  },
+  {
+    "face": 15,
+    "suit": "real-estate-agent"
+  },
+  {
+    "face": 15,
+    "suit": "landscaper"
+  }
+]

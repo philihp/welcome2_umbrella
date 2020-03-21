@@ -1,0 +1,26 @@
+[
+  {
+    "face": 1,
+    "suit": "landscaper"
+  },
+  {
+    "face": 1,
+    "suit": "real-estate-agent"
+  },
+  {
+    "face": 2,
+    "suit": "surveyor"
+  },
+  {
+    "face": 2,
+    "suit": "landscaper"
+  },
+  {
+    "face": 5,
+    "suit": "landscaper"
+  },
+  {
+    "face": 5,
+    "suit": "real-estate-agent"
+  }
+]
