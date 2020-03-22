@@ -18,7 +18,7 @@ $ mix test
 # Running CLI
 
 ```
-mix run -e Welcome2Cli.start
+$ mix run -e Welcome2Cli.start
 ```
 
 # Running Webapp
