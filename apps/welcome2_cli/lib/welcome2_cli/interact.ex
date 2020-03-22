@@ -1,6 +1,4 @@
 defmodule Welcome2Cli.Interact do
-  @server :"welcome2_game@valencia.lan"
-
   alias Welcome2Cli.{State, Player}
 
   def start() do
@@ -17,7 +15,6 @@ defmodule Welcome2Cli.Interact do
   end
 
   defp connect do
-    Node.connect(@server)
-    :rpc.call(@server, Welcome2Game, :new_game, [])
+    Welcome2Game.new_game()
   end
 end
