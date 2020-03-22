@@ -24,7 +24,8 @@ defmodule Welcome2Cli.MixProject do
 
   defp deps do
     [
-      {:welcome2_game, in_umbrella: true}
+      {:welcome2_game, in_umbrella: true},
+      {:ex_ncurses, "~> 0.3"}
     ]
   end
 end
