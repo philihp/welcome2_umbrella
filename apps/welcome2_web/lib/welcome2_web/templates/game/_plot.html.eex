@@ -5,5 +5,49 @@
     <%= submit "", class: "button-small" %>
     <% end) %>
   <% end %>
+  <%= if {:temp, @row, @index, -2} in @moves do %>
+    <%= form_for(@conn, Routes.game_path(@conn, :advance), [method: :put, class: "form-inline"], fn f -> %>
+      <%= hidden_input(f, :action, value: "temp #{@row} #{@index} -2") %>
+    <%= submit "T-2", class: "button-small" %>
+    <% end) %>
+  <% end %>
+  <%= if {:temp, @row, @index, -1} in @moves do %>
+    <%= form_for(@conn, Routes.game_path(@conn, :advance), [method: :put, class: "form-inline"], fn f -> %>
+      <%= hidden_input(f, :action, value: "temp #{@row} #{@index} -1") %>
+    <%= submit "T-1", class: "button-small" %>
+    <% end) %>
+  <% end %>
+  <%= if {:temp, @row, @index, 0} in @moves do %>
+    <%= form_for(@conn, Routes.game_path(@conn, :advance), [method: :put, class: "form-inline"], fn f -> %>
+      <%= hidden_input(f, :action, value: "temp #{@row} #{@index} 0") %>
+    <%= submit "T+0", class: "button-small" %>
+    <% end) %>
+  <% end %>
+  <%= if {:temp, @row, @index, 1} in @moves do %>
+    <%= form_for(@conn, Routes.game_path(@conn, :advance), [method: :put, class: "form-inline"], fn f -> %>
+      <%= hidden_input(f, :action, value: "temp #{@row} #{@index} 1") %>
+    <%= submit "T+1", class: "button-small" %>
+    <% end) %>
+  <% end %>
+  <%= if {:temp, @row, @index, 2} in @moves do %>
+    <%= form_for(@conn, Routes.game_path(@conn, :advance), [method: :put, class: "form-inline"], fn f -> %>
+      <%= hidden_input(f, :action, value: "temp #{@row} #{@index} 2") %>
+    <%= submit "T+2", class: "button-small" %>
+    <% end) %>
+  <% end %>
+
+  <%= if {:bis, @row, @index, -1} in @moves do %>
+    <%= form_for(@conn, Routes.game_path(@conn, :advance), [method: :put, class: "form-inline"], fn f -> %>
+      <%= hidden_input(f, :action, value: "bis #{@row} #{@index} -1") %>
+    <%= submit "←B", class: "button-small" %>
+    <% end) %>
+  <% end %>
+  <%= if {:bis, @row, @index, 1} in @moves do %>
+    <%= form_for(@conn, Routes.game_path(@conn, :advance), [method: :put, class: "form-inline"], fn f -> %>
+      <%= hidden_input(f, :action, value: "bis #{@row} #{@index} 1") %>
+    <%= submit "B→", class: "button-small" %>
+    <% end) %>
+  <% end %>
+
   <%= @player[:"row#{@row}#{@index}number"] %>
 </td>
