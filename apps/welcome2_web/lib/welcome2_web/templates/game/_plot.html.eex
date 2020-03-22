@@ -1,0 +1,9 @@
+<td>
+  <%= if {:build, @row, @index} in @moves do %>
+    <%= form_for(@conn, Routes.game_path(@conn, :advance), [method: :put, class: "form-inline"], fn f -> %>
+      <%= hidden_input(f, :action, value: "build #{@row} #{@index}") %>
+    <%= submit "", class: "button-small" %>
+    <% end) %>
+  <% end %>
+  <%= @player[:"row#{@row}#{@index}number"] %>
+</td>

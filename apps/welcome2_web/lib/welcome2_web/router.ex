@@ -13,10 +13,12 @@ defmodule Welcome2Web.Router do
     plug :accepts, ["json"]
   end
 
-  scope "/", Welcome2Web do
+  scope "/game", Welcome2Web do
     pipe_through :browser
 
-    get "/", PageController, :index
+    get "/", GameController, :index
+    post "/", GameController, :new
+    put "/", GameController, :advance
   end
 
   # Other scopes may use custom stacks.

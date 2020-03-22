@@ -1,0 +1,6 @@
+
+<%= button("Create Game", to: Routes.game_path(@conn, :new)) %>
+
+<%#= form_for nil, Routes.game_path(@conn, :new), fn f -> %>
+  <%#= submit "Create Game" %>
+<%# end %>

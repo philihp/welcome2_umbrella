@@ -1,0 +1,13 @@
+<h1>Welcome To</h1>
+
+<%= form_for(@conn, Routes.game_path(@conn, :advance), [method: :put], fn f -> %>
+  <%= select(f, :action, move_options(@moves)) %>
+  <br />
+  <%= submit "Explore" %>
+<% end) %>
+
+<h2>Table</h2>
+<%= render "_board.html", conn: @conn, game: @game, moves: @moves %>
+
+<h2>Player</h2>
+<%= render "_player.html", conn: @conn, player: @game.player, moves: @moves %>
