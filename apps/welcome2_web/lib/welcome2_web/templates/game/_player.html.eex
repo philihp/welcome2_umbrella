@@ -1,6 +1,6 @@
 <table class="neighborhood">
   <tr>
-    <th>A</th>
+    <%= render "_park.html", row: :a, conn: @conn, built: @built, player: @player, moves: @moves %>
     <%= render "_plot.html", row: :a, index: 1, conn: @conn, player: @player, moves: @moves %>
     <%= render "_plot.html", row: :a, index: 2, conn: @conn, player: @player, moves: @moves %>
     <%= render "_plot.html", row: :a, index: 3, conn: @conn, player: @player, moves: @moves %>
@@ -13,7 +13,7 @@
     <%= render "_plot.html", row: :a, index: 10, conn: @conn, player: @player, moves: @moves %>
   </tr>
   <tr>
-    <th>B</th>
+    <%= render "_park.html", row: :b, conn: @conn, built: @built, player: @player, moves: @moves %>
     <%= render "_plot.html", row: :b, index: 1, conn: @conn, player: @player, moves: @moves %>
     <%= render "_plot.html", row: :b, index: 2, conn: @conn, player: @player, moves: @moves %>
     <%= render "_plot.html", row: :b, index: 3, conn: @conn, player: @player, moves: @moves %>
@@ -27,7 +27,7 @@
     <%= render "_plot.html", row: :b, index: 11, conn: @conn, player: @player, moves: @moves %>
   </tr>
   <tr>
-    <th>C</th>
+    <%= render "_park.html", row: :c, conn: @conn, built: @built, player: @player, moves: @moves %>
     <%= render "_plot.html", row: :c, index: 1, conn: @conn, player: @player, moves: @moves %>
     <%= render "_plot.html", row: :c, index: 2, conn: @conn, player: @player, moves: @moves %>
     <%= render "_plot.html", row: :c, index: 3, conn: @conn, player: @player, moves: @moves %>

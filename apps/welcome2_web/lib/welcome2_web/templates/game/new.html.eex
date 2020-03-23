@@ -13,6 +13,6 @@
   </div>
   <div class="tableau">
     <h2>Player</h2>
-    <%= render "_player.html", conn: @conn, player: @game.player, moves: @moves %>
+    <%= render "_player.html", conn: @conn, player: @game.player, built: @game.built, moves: @moves %>
   </div>
 </div>

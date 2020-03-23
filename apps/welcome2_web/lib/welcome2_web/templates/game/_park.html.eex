@@ -1,0 +1,11 @@
+<th>
+  <%= String.upcase(Atom.to_string(@row)) %><br />
+  Park: <%= Map.get(@player, :"park#{@row}") %>
+
+  <%= if :park in @moves && @built != nil && elem(@built, 0) == @row do %>
+    <%= form_for(@conn, Routes.game_path(@conn, :advance), [method: :put, class: "form-inline"], fn f -> %>
+      <%= hidden_input(f, :action, value: "park") %>
+    <%= submit "Park", class: "button-small" %>
+    <% end) %>
+  <% end %>
+</th>
