@@ -1,18 +1,18 @@
-<div class="column">
-  <dl>
+<div class="plan">
+  <b>Plan</b>
+  <div class="needs">
     <%= for {size, amount} <- @plan.needs do %>
       <dt><%= amount %>x Estate of <%= size %></dt>
     <% end %>
-  </dl>
+  </div>
 
-  Points:
-
-  <%= if @unused do %>
-    <b><%= @plan.points1 %></b>
-    (<%= @plan.points2 %>)
-  <% else %>
-    <%= @plan.points1 %>
-    (<b><%= @plan.points2 %></b>)
-  <% end %>
-
+  <div class="points">
+    <%= if @unused do %>
+      <b><%= @plan.points1 %></b>
+      (<%= @plan.points2 %>)
+    <% else %>
+      <%= @plan.points1 %>
+      (<b><%= @plan.points2 %></b>)
+    <% end %>
+  </div>
 </div>

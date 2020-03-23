@@ -2,31 +2,31 @@
   <%= if {:build, @row, @index} in @moves do %>
     <%= form_for(@conn, Routes.game_path(@conn, :advance), [method: :put, class: "form-inline"], fn f -> %>
       <%= hidden_input(f, :action, value: "build #{@row} #{@index}") %>
-    <%= submit "", class: "button-small" %>
+    <%= submit "✓", class: "button-small" %>
     <% end) %>
   <% end %>
   <%= if {:temp, @row, @index, -2} in @moves do %>
     <%= form_for(@conn, Routes.game_path(@conn, :advance), [method: :put, class: "form-inline"], fn f -> %>
       <%= hidden_input(f, :action, value: "temp #{@row} #{@index} -2") %>
-    <%= submit "T-2", class: "button-small" %>
+    <%= submit "✓-2", class: "button-small" %>
     <% end) %>
   <% end %>
   <%= if {:temp, @row, @index, -1} in @moves do %>
     <%= form_for(@conn, Routes.game_path(@conn, :advance), [method: :put, class: "form-inline"], fn f -> %>
       <%= hidden_input(f, :action, value: "temp #{@row} #{@index} -1") %>
-    <%= submit "T-1", class: "button-small" %>
+    <%= submit "✓-1", class: "button-small" %>
     <% end) %>
   <% end %>
   <%= if {:temp, @row, @index, 0} in @moves do %>
     <%= form_for(@conn, Routes.game_path(@conn, :advance), [method: :put, class: "form-inline"], fn f -> %>
       <%= hidden_input(f, :action, value: "temp #{@row} #{@index} 0") %>
-    <%= submit "T+0", class: "button-small" %>
+    <%= submit "✓+0", class: "button-small" %>
     <% end) %>
   <% end %>
   <%= if {:temp, @row, @index, 1} in @moves do %>
     <%= form_for(@conn, Routes.game_path(@conn, :advance), [method: :put, class: "form-inline"], fn f -> %>
       <%= hidden_input(f, :action, value: "temp #{@row} #{@index} 1") %>
-    <%= submit "T+1", class: "button-small" %>
+    <%= submit "✓+1", class: "button-small" %>
     <% end) %>
   <% end %>
   <%= if {:temp, @row, @index, 2} in @moves do %>

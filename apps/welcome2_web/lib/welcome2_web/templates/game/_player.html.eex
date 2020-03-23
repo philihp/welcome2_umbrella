@@ -1,4 +1,4 @@
-<table>
+<table class="neighborhood">
   <tr>
     <th>A</th>
     <%= render "_plot.html", row: :a, index: 1, conn: @conn, player: @player, moves: @moves %>

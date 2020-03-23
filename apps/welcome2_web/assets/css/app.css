@@ -1,3 +1,99 @@
 /* This file is for your main application css. */
 
-@import "./phoenix.css";
+/* @import "./phoenix.css"; */
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+  font-size: smaller;
+}
+
+.gameview {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.header {
+  display: grid-item;
+  padding: 10px;
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+.tabletop {
+  display: grid-item;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  padding: 10px;
+}
+
+.tableau {
+  display: grid-item;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  padding: 10px;
+}
+
+.info {
+  color: blue;
+  text-decoration-color: cornflowerblue;
+  text-decoration-line: underline;
+  text-decoration-style: dotted;
+}
+
+.permit-deck {
+  display: inline-block;
+  background-color: rgb(194, 241, 201);
+  border: 1px solid rgb(140, 209, 149);
+  border-radius: 5px;
+}
+
+.permit {
+  border: 1px solid rgb(140, 209, 149);
+  border-width: 0 0 1px 0;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.permit .suit {
+  font-weight: bold;
+}
+
+.permit .face {
+  font-size: x-large;
+}
+
+.permit-deck .next-permit {
+  font-weight: bold;
+  color: rgb(83, 99, 83);
+  padding: 5px;
+}
+
+.permit .selectable {
+  text-align: center;
+}
+
+.plan {
+  border: 1px solid skyblue;
+  border-radius: 5px;
+  display: inline-block;
+  padding: 5px;
+  background-color: rgb(200, 232, 245);
+}
+
+.plan .needs {
+}
+
+.plan .points {
+}
+
+.neighborhood {
+  border: 1px solid pink;
+  border-collapse: collapse;
+}
+
+.neighborhood td {
+  border: 1px solid pink;
+  height: 50px;
+  width: 50px;
+}

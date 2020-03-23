@@ -1,10 +1,17 @@
-<div class="column">
-  Permit: <%= @permit.suit %> + <%= @permit.face %></br />
-  Next: <%= @next %><br />
-  <%= if @selectable do %>
-    <%= form_for(@conn, Routes.game_path(@conn, :advance), [method: :put, class: "form-inline"], fn f -> %>
-      <%= hidden_input(f, :action, value: @value) %>
-      <%= submit "Select", class: "button-small" %>
-    <% end) %>
-  <% end %>
+<div class="permit-deck">
+  <div class="permit">
+    <div class="selectable">
+      <%= if @selectable do %>
+        <%= form_for(@conn, Routes.game_path(@conn, :advance), [method: :put, class: "form-inline"], fn f -> %>
+          <%= hidden_input(f, :action, value: @value) %>
+          <%= submit "Select", class: "button-small" %>
+        <% end) %>
+      <% end %>
+    </div>
+    <div class="face"><%= @permit.face %></div>
+    <div class="suit"><%= @permit.suit %></div>
+  </div>
+  <div class="next-permit">
+    <%= @next %>
+  </div>
 </div>
