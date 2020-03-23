@@ -1,5 +1,5 @@
 <div class="permit-deck">
-  <div class="permit">
+  <div class="permit  <%= @selected==@permit && "selected" %>">
     <div class="selectable">
       <%= if @selectable do %>
         <%= form_for(@conn, Routes.game_path(@conn, :advance), [method: :put, class: "form-inline"], fn f -> %>

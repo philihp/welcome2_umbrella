@@ -1,8 +1,8 @@
 <h3>Permits</h3>
 <div class="row">
-  <%= render "_permit.html", conn: @conn, permit: @game.shown1, next: @game.deck1_suit, selectable: {:permit, 1} in @moves, value: "permit 1" %>
-  <%= render "_permit.html", conn: @conn, permit: @game.shown2, next: @game.deck2_suit, selectable: {:permit, 2} in @moves, value: "permit 2" %>
-  <%= render "_permit.html", conn: @conn, permit: @game.shown3, next: @game.deck3_suit, selectable: {:permit, 3} in @moves, value: "permit 3" %>
+  <%= render "_permit.html", conn: @conn, permit: @game.shown1, next: @game.deck1_suit, selectable: {:permit, 1} in @moves, value: "permit 1", selected: @game.permit %>
+  <%= render "_permit.html", conn: @conn, permit: @game.shown2, next: @game.deck2_suit, selectable: {:permit, 2} in @moves, value: "permit 2", selected: @game.permit %>
+  <%= render "_permit.html", conn: @conn, permit: @game.shown3, next: @game.deck3_suit, selectable: {:permit, 3} in @moves, value: "permit 3", selected: @game.permit %>
 </div>
 
 <h3>Plans</h3>

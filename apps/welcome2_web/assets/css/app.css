@@ -73,6 +73,11 @@ body {
   text-align: center;
 }
 
+.permit.selected {
+  background-color: rgb(238, 241, 194);
+  border-color: rgb(194, 209, 140);
+}
+
 .plan {
   border: 1px solid skyblue;
   border-radius: 5px;
