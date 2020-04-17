@@ -13,8 +13,6 @@ use Mix.Config
 config :welcome2_ecto,
   ecto_repos: [Welcome2Ecto.Repo]
 
-
-
 config :welcome2_web,
   generators: [context_app: :welcome2]
 
@@ -23,7 +21,8 @@ config :welcome2_web, Welcome2Web.Endpoint,
   url: [host: "localhost"],
   secret_key_base: "hPeIweqI/t0LIsXH6JKMp8w0tbxJ7/ucBc/wSIJGd1BMhNcAg/3QM5FOLE1JYlxC",
   render_errors: [view: Welcome2Web.ErrorView, accepts: ~w(html json)],
-  pubsub: [name: Welcome2Web.PubSub, adapter: Phoenix.PubSub.PG2]
+  pubsub: [name: Welcome2Web.PubSub, adapter: Phoenix.PubSub.PG2],
+  live_view: [signing_salt: "hunter3"]
 
 # Configures Elixir's Logger
 config :logger, :console,

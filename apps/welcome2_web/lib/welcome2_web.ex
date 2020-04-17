@@ -23,6 +23,7 @@ defmodule Welcome2Web do
       import Plug.Conn
       import Welcome2Web.Gettext
       alias Welcome2Web.Router.Helpers, as: Routes
+      import Phoenix.LiveView.Controller
     end
   end
 
@@ -41,6 +42,7 @@ defmodule Welcome2Web do
       import Welcome2Web.ErrorHelpers
       import Welcome2Web.Gettext
       alias Welcome2Web.Router.Helpers, as: Routes
+      import Phoenix.LiveView.Controller
     end
   end
 
@@ -49,6 +51,7 @@ defmodule Welcome2Web do
       use Phoenix.Router
       import Plug.Conn
       import Phoenix.Controller
+      import Phoenix.LiveView.Controller
     end
   end
 
