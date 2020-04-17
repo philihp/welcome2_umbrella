@@ -1,0 +1,15 @@
+<li>
+  <%= if {:agent, @estatesize} in @moves do %>
+    <%= form_for(@conn, Routes.game_path(@conn, :advance), [method: :put, class: "form-inline"], fn f -> %>
+      <%= submit "Agent #{@estatesize}", name: :action, value: "agent #{@estatesize}", class: "button-small" %>
+    <% end) %>
+  <% end %>
+  <b><%= @estatesize %></b>:
+  <%= for value <- @values do %>
+    <%= cond do %>
+      <% @current > value -> %>╳
+      <% @current == value -> %><%= value %>
+      <% true -> %>
+    <% end %>
+  <% end %>
+</li>
