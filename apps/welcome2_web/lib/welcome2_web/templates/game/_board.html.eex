@@ -1,3 +1,16 @@
+
+<div class="row">
+  <%= form_for(@conn, Routes.game_path(@conn, :advance), [method: :put, class: "form-inline"], fn f -> %>
+    <%=
+      Enum.map(@moves, fn
+        :commit -> submit "Commit", name: :action, value: "commit", class: "button-small"
+        :rollback -> submit "Rollback", name: :action, value: "rollback", class: "button-small"
+        _ -> ""
+      end)
+    %>
+  <% end) %>
+</div>
+
 <h3>Permits</h3>
 <div class="row">
   <%= render "_permit.html", conn: @conn, permit: @game.shown1, next: @game.deck1_suit, selectable: {:permit, 1} in @moves, value: "permit 1", selected: @game.permit %>
