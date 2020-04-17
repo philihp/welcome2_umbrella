@@ -1,0 +1,13 @@
+<%
+used = case :"fence#{@row}#{@index}" do
+  :fencea0 -> true
+  :fenceb0 -> true
+  :fencec0 -> true
+  :fencea10 -> true
+  :fenceb11 -> true
+  :fencec12 -> true
+  key -> @player[key]
+end
+%>
+<td class="fence<%= used && " used" || "" %>">
+</td>

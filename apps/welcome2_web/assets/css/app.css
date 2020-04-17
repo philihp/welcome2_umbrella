@@ -102,3 +102,11 @@ body {
   height: 50px;
   width: 50px;
 }
+
+.neighborhood td.fence {
+  width: 3px;
+}
+
+.neighborhood td.fence.used {
+  background-color: pink;
+}

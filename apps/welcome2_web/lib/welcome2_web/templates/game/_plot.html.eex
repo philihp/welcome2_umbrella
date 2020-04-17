@@ -49,6 +49,24 @@
     <% end) %>
   <% end %>
 
+  <%= if :pool in @moves and {@row, @index} == @built do %>
+    <%= form_for(@conn, Routes.game_path(@conn, :advance), [method: :put, class: "form-inline"], fn f -> %>
+      <%= submit "Pool", name: :action, value: "pool", class: "button-small" %>
+    <% end) %>
+  <% end %>
+
   <%= @player[:"row#{@row}#{@index}number"] %>
   <%= if @player[:"row#{@row}#{@index}bis"] do "b" end %>
+  <%= case @player[:"row#{@row}#{@index}pool"] do
+    nil -> ""
+    true -> "p"
+    false -> "."
+  end %>
+
+  <%= if {:fence, @row, @index} in @moves do %>
+    <%= form_for(@conn, Routes.game_path(@conn, :advance), [method: :put, class: "form-inline"], fn f -> %>
+      <%= hidden_input(f, :action, value: "fence #{@row} #{@index}") %>
+    <%= submit "F→", class: "button-small" %>
+    <% end) %>
+  <% end %>
 </td>
