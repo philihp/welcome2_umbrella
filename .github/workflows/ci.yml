@@ -3,8 +3,8 @@ name: CI
 on: push
 
 env:
-  OTP_VERSION: 22.x
-  ELIXIR_VERSION: 1.10.x
+  OTP_VERSION: 22.2
+  ELIXIR_VERSION: 1.9.4
   NODE_VERSION: 13.x
 
 jobs:
