@@ -107,6 +107,11 @@ body {
   width: 3px;
 }
 
-.neighborhood td.fence.used {
+.neighborhood td.estate {
+  height: 3px;
+}
+
+.neighborhood td.fence.used,
+.neighborhood td.estate.used {
   background-color: pink;
 }

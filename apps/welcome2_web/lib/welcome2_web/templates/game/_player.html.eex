@@ -1,6 +1,18 @@
 <table class="neighborhood">
   <tr>
     <%= render "_park.html", row: :a, conn: @conn, built: @built, player: @player, moves: @moves %>
+    <%= render "_estate.html", row: :a, index: 1, player: @player %>
+    <%= render "_estate.html", row: :a, index: 2, player: @player %>
+    <%= render "_estate.html", row: :a, index: 3, player: @player %>
+    <%= render "_estate.html", row: :a, index: 4, player: @player %>
+    <%= render "_estate.html", row: :a, index: 5, player: @player %>
+    <%= render "_estate.html", row: :a, index: 6, player: @player %>
+    <%= render "_estate.html", row: :a, index: 7, player: @player %>
+    <%= render "_estate.html", row: :a, index: 8, player: @player %>
+    <%= render "_estate.html", row: :a, index: 9, player: @player %>
+    <%= render "_estate.html", row: :a, index: 10, player: @player %>
+  </tr>
+  <tr>
     <%= render "_fence.html", row: :a, index: 0, conn: @conn, built: @built, player: @player, moves: @moves %>
     <%= render "_plot.html", row: :a, index: 1, conn: @conn, built: @built, player: @player, moves: @moves %>
     <%= render "_fence.html", row: :a, index: 1, conn: @conn, built: @built, player: @player, moves: @moves %>
@@ -25,6 +37,19 @@
   </tr>
   <tr>
     <%= render "_park.html", row: :b, conn: @conn, built: @built, player: @player, moves: @moves %>
+    <%= render "_estate.html", row: :b, index: 1, player: @player %>
+    <%= render "_estate.html", row: :b, index: 2, player: @player %>
+    <%= render "_estate.html", row: :b, index: 3, player: @player %>
+    <%= render "_estate.html", row: :b, index: 4, player: @player %>
+    <%= render "_estate.html", row: :b, index: 5, player: @player %>
+    <%= render "_estate.html", row: :b, index: 6, player: @player %>
+    <%= render "_estate.html", row: :b, index: 7, player: @player %>
+    <%= render "_estate.html", row: :b, index: 8, player: @player %>
+    <%= render "_estate.html", row: :b, index: 9, player: @player %>
+    <%= render "_estate.html", row: :b, index: 10, player: @player %>
+    <%= render "_estate.html", row: :b, index: 11, player: @player %>
+  </tr>
+  <tr>
     <%= render "_fence.html", row: :b, index: 0, conn: @conn, built: @built, player: @player, moves: @moves %>
     <%= render "_plot.html", row: :b, index: 1, conn: @conn, built: @built, player: @player, moves: @moves %>
     <%= render "_fence.html", row: :b, index: 1, conn: @conn, built: @built, player: @player, moves: @moves %>
@@ -51,6 +76,20 @@
   </tr>
   <tr>
     <%= render "_park.html", row: :c, conn: @conn, built: @built, player: @player, moves: @moves %>
+    <%= render "_estate.html", row: :c, index: 1, player: @player %>
+    <%= render "_estate.html", row: :c, index: 2, player: @player %>
+    <%= render "_estate.html", row: :c, index: 3, player: @player %>
+    <%= render "_estate.html", row: :c, index: 4, player: @player %>
+    <%= render "_estate.html", row: :c, index: 5, player: @player %>
+    <%= render "_estate.html", row: :c, index: 6, player: @player %>
+    <%= render "_estate.html", row: :c, index: 7, player: @player %>
+    <%= render "_estate.html", row: :c, index: 8, player: @player %>
+    <%= render "_estate.html", row: :c, index: 9, player: @player %>
+    <%= render "_estate.html", row: :c, index: 10, player: @player %>
+    <%= render "_estate.html", row: :c, index: 11, player: @player %>
+    <%= render "_estate.html", row: :c, index: 12, player: @player %>
+  </tr>
+  <tr>
     <%= render "_fence.html", row: :c, index: 0, conn: @conn, built: @built, player: @player, moves: @moves %>
     <%= render "_plot.html", row: :c, index: 1, conn: @conn, built: @built, player: @player, moves: @moves %>
     <%= render "_fence.html", row: :c, index: 1, conn: @conn, built: @built, player: @player, moves: @moves %>
@@ -78,6 +117,13 @@
     <%= render "_fence.html", row: :c, index: 12, conn: @conn, built: @built, player: @player, moves: @moves %>
   </tr>
 </table>
+
+<h3>Plans</h3>
+<ul>
+  <li>No. 1: <%= @player.plan1 != 0 && @player.plan1 || "" %></li>
+  <li>No. 2: <%= @player.plan2 != 0 && @player.plan2 || "" %></li>
+  <li>No. 3: <%= @player.plan3 != 0 && @player.plan3 || "" %></li>
+</ul>
 
 <h3>Real Estate Agent</h3>
 <ul>

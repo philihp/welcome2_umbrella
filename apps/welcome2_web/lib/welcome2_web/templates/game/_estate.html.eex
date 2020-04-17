@@ -1,0 +1,7 @@
+<%
+used = case :"row#{@row}#{@index}plan" do
+  key -> @player[key]
+end
+%>
+<td class="estate<%= used && " used" || "" %>"></td>
+<td class="estate fence"></td>

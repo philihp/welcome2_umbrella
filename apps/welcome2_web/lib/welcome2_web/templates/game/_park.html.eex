@@ -1,4 +1,4 @@
-<th>
+<th rowspan="2">
   <%= String.upcase(Atom.to_string(@row)) %><br />
   Park: <%= Map.get(@player, :"park#{@row}") %>
 
@@ -9,3 +9,4 @@
     <% end) %>
   <% end %>
 </th>
+<td class="estate fence"></td>
