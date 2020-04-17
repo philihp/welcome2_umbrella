@@ -50,4 +50,5 @@
   <% end %>
 
   <%= @player[:"row#{@row}#{@index}number"] %>
+  <%= if @player[:"row#{@row}#{@index}bis"] do "b" end %>
 </td>
