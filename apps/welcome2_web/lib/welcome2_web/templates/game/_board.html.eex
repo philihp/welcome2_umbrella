@@ -4,6 +4,7 @@
     <%=
       Enum.map(@moves, fn
         :commit -> submit "Commit", name: :action, value: "commit", class: "button-small"
+        :refuse -> submit "Refuse", name: :action, value: "refuse", class: "button-small"
         :rollback -> submit "Rollback", name: :action, value: "rollback", class: "button-small"
         _ -> ""
       end)
