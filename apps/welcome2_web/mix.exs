@@ -41,7 +41,7 @@ defmodule Welcome2Web.MixProject do
       {:phoenix_pubsub, "~> 1.1"},
       {:phoenix_html, "~> 2.11"},
       {:phoenix_live_reload, "~> 1.2", only: :dev},
-      {:gettext, "~> 0.17"},
+      {:gettext, "~> 0.18"},
       {:welcome2, in_umbrella: true},
       {:jason, "~> 1.0"},
       {:plug_cowboy, "~> 2.0"}
